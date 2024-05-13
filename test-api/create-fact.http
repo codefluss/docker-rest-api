@@ -1,0 +1,7 @@
+POST http://localhost:3000/fact
+content-type: application/json
+
+{
+  "question": "What is the capital of Austria?",
+  "answer": "Vienna"
+}

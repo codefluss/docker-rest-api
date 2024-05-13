@@ -12,7 +12,7 @@ import (
 )
 
 type DBInstance struct {
-	DB *gorm.DB
+	Db *gorm.DB
 }
 
 var DB *DBInstance
@@ -41,5 +41,5 @@ func ConnectDb() {
 	log.Println("Migrating database")
 	db.AutoMigrate(&models.Fact{})
 
-	DB = &DBInstance{DB: db}
+	DB = &DBInstance{Db: db}
 }
