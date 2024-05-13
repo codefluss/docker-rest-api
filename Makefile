@@ -7,6 +7,8 @@ run:
 web-bash:
 	@docker compose run --service-ports web bash
 
+rebuild:
+	@docker compose up --build -d
 
 test:
 	@go test -v ./...
